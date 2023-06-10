@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Book</h2>
+
+<form action="/Book/Create" method="POST">
+    <div>
+        <label>Name:</label> <input type="text" name="BookName" />
+    </div>
+    <div>
+        <label>Author:</label> <input type="text" name="author" />
+    </div>
+
+    <div>
+        <label>ISBN:</label> <input type="number" name="ISBN" />
+    </div>
+    <div>
+        <label>Genre:</label> <input type="text" name="genre" />
+    </div>
+    <div>
+        <label>Publisher ID:</label> <input type="number" name="PublisherID" />
+    </div>
+    <div>
+        <input type="submit" value="Add Book" />
+
+    </div>
+</form>
+

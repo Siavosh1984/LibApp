@@ -1,0 +1,14 @@
+﻿
+@model LibApp.Models.BookDto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<a href="/Book/List">Go back to list</a>
+<h>@Model.BookName</h>
+<div>Author: @Model.author</div>
+<div>ISBN: @Model.ISBN</div>
+<div>Genre: @Model.genre</div>
+

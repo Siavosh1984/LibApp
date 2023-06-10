@@ -1,0 +1,20 @@
+﻿
+@model IEnumerable<LibApp.Models.BookDto>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+@foreach (var book in Model)
+
+{
+    <h2><a href="/Book/Details/@book.BookID">@book.BookName</a></h2>
+    
+    <div>Author: @book.author</div>
+    <div>ISBN: @book.ISBN</div>
+    <div>Genre: @book.genre</div>
+
+}
+
